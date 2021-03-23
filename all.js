@@ -107,7 +107,7 @@ addBtn.addEventListener('click',function(e){
       group: Number(group.value),
       rate: Number(rate.value),
       description: description.value
-  })
+  });
     alert("新增成功");
   };
   init();
