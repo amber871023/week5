@@ -95,6 +95,14 @@ init();
 addBtn.addEventListener('click',function(e){
   if(form.ticketName.value == "" || form.ticketImgUrl.value == "" || form.ticketRegion.value == ""||form.ticketPrice.value == "" || form.ticketNum.value == "" || form.ticketRate.value == ""){
     alert("請填寫完整資料")
+  }else if( form.ticketPrice.value < 1){
+    alert("請填寫正確套票金額");
+    return;
+  }else if(form.ticketNum.value < 1){
+    alert("請填寫正確套票組數");
+  }else if(form.ticketRate.value < 1  || form.ticketRate.value > 10){
+    alert("請填寫星級 1~10 星");
+    
   }else if(form.ticketDescription.value.length > 100){
     alert("套票描述不得超過100字")
   } else {
