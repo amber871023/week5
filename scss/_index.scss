@@ -14,14 +14,13 @@
 }
 .ticketImg{
   position: relative;
-  height: 180px;
   a{
     display: block;
     overflow: hidden;
 }
   img{
     width: 100%;
-    
+    height: 180px;
      object-fit: cover;
      &:hover{
       transform: scale(1.15);
