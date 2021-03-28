@@ -93,6 +93,7 @@ init();
 
 //新增套票+防呆
 addBtn.addEventListener('click',function(e){
+  e.preventDefault(); 
   if(form.ticketName.value == "" || form.ticketImgUrl.value == "" || form.ticketRegion.value == ""||form.ticketPrice.value == "" || form.ticketNum.value == "" || form.ticketRate.value == ""){
     alert("請填寫完整資料");
   }else if( form.ticketPrice.value < 1){
